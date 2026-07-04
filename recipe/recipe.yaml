@@ -1,6 +1,6 @@
 context:
   name: sofa-python3
-  version: "25.12.00"
+  version: "26.06"
   major_minor: ${{ (version | split('.'))[:2] | join('.') }}
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/sofa-framework/SofaPython3/archive/refs/tags/release-v${{ major_minor }}.tar.gz
-  sha256: ee2dd23aa19d302689296ec40dc058b29b676b7d037051f0ed4a810db3317dc1
+  sha256: cac933bc06888f64250dd480d9f2335dfee897dd7c6f8f43ff834badb08dce51
 
   patches:
     # See comments in sofa conda package recipe at file
@@ -21,7 +21,7 @@ source:
         - patches/0001-hotfix-for-libpython-linking-on-macOS.patch
 
 build:
-  number: 1
+  number: 0
   files:
     # SofaPython3 as a weird conception of each module, both
     # a as a python binding module and a SOFA component (which contain CMake config files),
