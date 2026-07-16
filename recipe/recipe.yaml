@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/sofa-framework/SofaPython3/archive/refs/tags/release-v${{ major_minor }}.tar.gz
-  sha256: cac933bc06888f64250dd480d9f2335dfee897dd7c6f8f43ff834badb08dce51
+  sha256: 880d9f1d5c34e769ccb1e006173e08b5d7c96c156147dc67a290da1142ad7d0e
 
   patches:
     # See comments in sofa conda package recipe at file
